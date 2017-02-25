@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DojoQuery</title>
+    <script src="dojoQuery.js"></script>
+  </head>
+  <body>
+    <button id="button">Dojo Query</button>
+  </body>
+  <script>
+    $Dojo('button').click(function() {
+      alert("It's not JQuery anymore, it's DojoQuery yeaahh!");
+      this.style.backgroundColor = "#2196F3"
+    });
+    $Dojo('button').hover(function(){
+      this.style.backgroundColor = "#4caf50"
+    },function(){
+      this.style.backgroundColor = "#d8d8d8"
+    });
+  </script>
+</html>
